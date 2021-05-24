@@ -3,7 +3,8 @@ const makeThumb = (src) => {
   const img = document.createElement("img");
   img.src = src;
   img.style.float = "right";
-  img.style.height = "125px";
+  img.style.height = "120px";
+  img.style.marginLeft = "5px";
   return img;
 };
 
