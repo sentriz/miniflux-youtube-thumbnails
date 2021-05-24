@@ -8,7 +8,8 @@ const makeThumb = (src) => {
   return img;
 };
 
-const findVideoID = (url) => url.match("v=([0-9a-zA-Z-_]+)")?.[1];
+const findVideoIDExpr = /watch\?v=([0-9a-zA-Z-_]+)/;
+const findVideoID = (url) => url.match(findVideoIDExpr)?.[1];
 const findVideoURL = (elm) =>
   elm.querySelector(".item-meta > .item-meta-icons a[target=_blank]")?.href;
 
