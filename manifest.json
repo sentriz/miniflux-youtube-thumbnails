@@ -1,7 +1,7 @@
 {
   "name": "miniflux youtube thumbnails",
   "version": "0.0.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "permissions": ["https://rss.example.com/*"],
   "content_scripts": [
     {

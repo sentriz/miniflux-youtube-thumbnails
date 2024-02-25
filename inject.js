@@ -29,7 +29,7 @@ const attachThumbs = () => {
   }
 };
 
-chrome.extension.sendMessage({}, () => {
+chrome.runtime.sendMessage({}, () => {
   const tryAttach = setInterval(() => {
     if (document.readyState !== "complete") return;
 
